@@ -22,7 +22,7 @@ while True:
     print("---------------------")
 
     if operacao == 1:
-        # Variavesi que serão informadas
+        # Variaveis que serão informadas
         x = float(input("Valor 01: "))
         print("----------------")
         y = float(input("Valor 02: "))
@@ -36,7 +36,7 @@ while True:
         print("----------------")
 
     elif operacao == 2:
-        # Variavesi que serão informadas
+        # Variaveis que serão informadas
         x = float(input("Valor 01: "))
         print("----------------")
         y = float(input("Valor 02: "))
@@ -50,7 +50,7 @@ while True:
         print("----------------")
 
     elif operacao == 3:
-        # Variavesi que serão informadas
+        # Variaveis que serão informadas
         x = float(input("Valor 01: "))
         print("----------------")
         y = float(input("Valor 02: "))
@@ -64,7 +64,7 @@ while True:
         print("----------------")
 
     elif operacao == 4:
-        # Variavesi que serão informadas
+        # Variaveis que serão informadas
         x = float(input("Valor 01: "))
         print("----------------")
     
