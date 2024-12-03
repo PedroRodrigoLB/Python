@@ -1,21 +1,21 @@
 # Sistema de Pedidos
 
 - Customer
-    nome
-    email
+    - nome
+    - email
 
 - Product
-    name
-    description
-    price
+    - name
+    - description
+    - price
 
 - Order
-    [OrderStatus]
-    [OrderItem]
-    total
+    - [OrderStatus]
+    - [OrderItem]
+    - total
 
 - OrderStatus
-    nome (REALIZADO, EM PREPARACAO, ENVIADO, ENTREGUE, FINALIZADO)
+    - nome (REALIZADO, EM PREPARACAO, ENVIADO, ENTREGUE, FINALIZADO)
 
 - OrderItem
     - product_id
