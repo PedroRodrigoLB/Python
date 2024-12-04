@@ -1,19 +1,22 @@
 # Casos de uso
-<div>
-    <h1>Customer</h1>
-        - cadastrar cliente
-        - verificar se o email já está cadastrado
 
-    - Product
-        - criar produto
-        - obter detalhe do produto
-        - atualizar produto
-        - deletar produto
-        - listar produto
+<h2>Customer</h2>
+    <ul>
+        <li>cadastrar cliente</li>
+        <li>verificar se o email já está cadastrado</li>
 
-    - Order
-        - criar pedido
-        - obter detalhe do pedido
-        - atualizar status do pedido
-        - listar pedidos
-</div>
+<h2>Product</h2>
+    <ul>
+        <li>criar produto</li>
+        <li>obter detalhe do produto</li>
+        <li>atualizar produto</li>
+        <li>deletar produto</li>
+        <li>listar produto</li>
+    </ul>
+<h2>Order</h2>
+    <ul>
+        <li>criar pedido</li>
+        <li>obter detalhe do pedido</li>
+        <li>atualizar status do pedido</li>
+        <li>listar pedidos</li>
+    </ul>
