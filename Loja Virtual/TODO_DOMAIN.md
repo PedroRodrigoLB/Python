@@ -1,23 +1,33 @@
 # Sistema de Pedidos
 
-- Customer
-    - nome
-    - email
+<h3>Customer</h3>
+    <ul type="square">
+        <li>nome</li>
+        <li>email</li>
+    </ul>
 
-- Product
-    - name
-    - description
-    - price
+<h3>Product</h3>
+    <ul type="square">
+        <li>name</li>
+        <li>description</li>
+        <li>price</li>
+    </ul>
 
-- Order
-    - [OrderStatus]
-    - [OrderItem]
-    - total
+<h3>Order</h3>
+    <ul type="square">
+        <li>[OrderStatus]</li>
+        <li>[OrderItem]</li>
+        <li>total</li>
+    </ul>
 
-- OrderStatus
-    - nome (REALIZADO, EM PREPARACAO, ENVIADO, ENTREGUE, FINALIZADO)
+<h3>OrderStatus</h3>
+    <ul type="square">
+        <li>nome (REALIZADO, EM PREPARACAO, ENVIADO, ENTREGUE, FINALIZADO)</li>
+    </ul>
 
-- OrderItem
-    - product_id
-    - price
-    - quantity
+<h3>OrderItem</h3>
+    <ul type="square">
+        <li>product_id</li>
+        <li>price</li>
+        <li>quantity</li>
+    </ul>
