@@ -1,8 +1,11 @@
+from src.domain.customer import Customer
 from src.domain.order import Order, OrderStatus, OrderStatusName, OrderItem
 from src.domain.product import Product
 
 def test_should_create_order():
     
+    customer: Customer = Customer(name="Rodrigo", email="rodrigo@test.com")
+
     # Primeiro status: realizado
     status: OrderStatus = OrderStatus()
 
@@ -30,17 +33,22 @@ def test_should_create_order():
         product_id=product1.id, price=product1.price, quantity=1
         )
     item2: OrderItem = OrderItem(
-        product_id=product2.id, price=product2.price, quantity=2
+        product_id=product2.id, price=product2.price, quantity=1
         )
     
-    order: Order = Order()
+    item3: OrderItem = OrderItem(
+        product_id=product3.id, price=product3.price, quantity=1
+        )
+    
+    order: Order = Order(customer = customer)
     order.add_status(status)
     order.add_item(item1)
     order.add_item(item2)
+    order.add_item(item3)
     
     assert len(order.status) == 1
     assert order.status[0].name == OrderStatusName.ACCOMPLISHED
-    assert len(order.items) == 2
+    assert len(order.items) == 3
 
 
 
@@ -64,3 +72,14 @@ def test_should_create_order():
 
     assert len(order.status) == 4
     assert order.status[3].name == OrderStatusName.DELIVERED
+
+    # novo status: finalizado
+    status5 = OrderStatus(name=OrderStatusName.FINISHED)
+    order.add_status(status5)
+
+    assert len(order.status) == 5
+    assert order.status[4].name == OrderStatusName.FINISHED
+
+    # verificando total
+
+    assert order.total() == 16800.0

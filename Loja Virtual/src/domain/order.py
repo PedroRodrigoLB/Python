@@ -1,5 +1,6 @@
 from uuid import UUID
 from pydantic import BaseModel, Field
+from src.domain.customer import Customer
 from src.domain.base import DomainBase
 from enum import Enum
 
@@ -23,6 +24,7 @@ class OrderItem(BaseModel):
 
 
 class Order(DomainBase):
+    customer: Customer
     status: list[OrderStatus] = Field(default=[])
     items: list[OrderItem] = Field(default=[])
 
@@ -31,4 +33,6 @@ class Order(DomainBase):
     
     def add_item(self, item: OrderItem):
         self.items.append(item)
-        
+
+    def total(self):
+        return sum([item.price * item.quantity for item in self.items])
