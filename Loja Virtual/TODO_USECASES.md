@@ -4,6 +4,7 @@
     <ul>
         <li>cadastrar cliente</li>
         <li>verificar se o email já está cadastrado</li>
+    </ul>
 
 <h2>Product</h2>
     <ul>
