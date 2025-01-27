@@ -1,0 +1,15 @@
+Passo 1: Abrir o sistema da empresa
+    sistema: https://dlp.hashtagtreinamentos.com/python/intensivao/login
+Passo 2: Fazer login
+Passo 3: Importat a base de dados dos produtos
+Passo 4: Cadastrar 1 produtos
+Passo 5: Repedti o passo 4 até acabar todso os produtos
+
+
+bibliotecas (pacote de dados ja criado e compartilhado):
+- pyautogui 
+    "https://pyautogui.readthedocs.io/en/latest/quickstart.html"
+
+- time
+
+- pandas6.50        
