@@ -64,7 +64,7 @@ print(tabela)
 
 time.sleep(2)
 
-# Passo 4: Cadastrar 1 produtos
+# Passo 4: Cadastrar 1 produto
 for linha in tabela.index:
 
     pyautogui.click(x=397,y=288)
