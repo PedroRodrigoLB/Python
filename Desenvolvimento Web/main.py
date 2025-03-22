@@ -8,5 +8,5 @@ app = Flask(__name__)
 configure_all(app)
 
 
-#execucao
-app.run(debug=True)
+# execução
+app.run(debug=True)  # "debug=True" ativa o modo desenvolvedor
